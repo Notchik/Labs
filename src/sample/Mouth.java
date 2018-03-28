@@ -5,14 +5,17 @@ package sample;
  * and method speak, which returns different strings */
 public class Mouth extends Organ{
 
-    public String size;
+    private String size;
 
+    /**Constructor of Mouth class*/
     public Mouth(String ss)
     {
         super(100);
         size = ss;
     }
 
+    /**Method Eat
+     * @return String with taste*/
     public String Eat()
     {
         double a = Math.random()*4+1;
@@ -32,6 +35,8 @@ public class Mouth extends Organ{
         }
     }
 
+    /**Method Speak
+     * @return String with some words*/
     public String Speak()
     {
         double a = Math.random()*4+1;

@@ -5,14 +5,17 @@ package sample;
  * and method itch, which returns feeling */
 public class Nose extends Organ{
 
-    public String form;
+    private String form;
 
+    /**Constructor of Nose class*/
     public Nose(String ss)
     {
         super(100);
         form = ss;
     }
 
+    /**Method Sniff
+     * @return String with smell*/
     public String sniff()
     {
         double a = Math.random()*4+1;
@@ -32,6 +35,8 @@ public class Nose extends Organ{
         }
     }
 
+    /**Method Itch
+     * @return String with feeling*/
     public String itch()
     {
         double a = Math.random()*2+1;

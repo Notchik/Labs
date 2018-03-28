@@ -9,7 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-
+/**Main class which developed for GUI*/
 public class Main extends Application {
     private Stage stage;
     private Scene scene;
@@ -69,7 +69,7 @@ public class Main extends Application {
             @Override
             public void handle(ActionEvent event) {
                 String end;
-                end = brain.rule(0,1);
+                end = brain.getResult(0,1);
                 result.setText(end);
             }
         });
@@ -78,7 +78,7 @@ public class Main extends Application {
             @Override
             public void handle(ActionEvent event) {
                 String end;
-                end = brain.rule(0,2);
+                end = brain.getResult(0,2);
                 result.setText(end);
             }
         });
@@ -87,7 +87,7 @@ public class Main extends Application {
             @Override
             public void handle(ActionEvent event) {
                 String end;
-                end = brain.rule(1,1);
+                end = brain.getResult(1,1);
                 result.setText(end);
             }
         });
@@ -96,7 +96,7 @@ public class Main extends Application {
             @Override
             public void handle(ActionEvent event) {
                 String end;
-                end = brain.rule(1,2);
+                end = brain.getResult(1,2);
                 result.setText(end);
             }
         });

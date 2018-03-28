@@ -4,15 +4,18 @@ package sample;
  * It was developed to rule the main organism*/
 public class Brain extends Organ{
 
-    public int KPD;
+    private int KPD;
 
+    /**Constructor of Brain class*/
     public  Brain (int a)
     {
         super(100);
         KPD = a;
     }
 
-    public String rule(int ch, int flag)
+    /**Method rule
+     * @return String with a result*/
+    private String rule(int ch, int flag)
     {
         switch (ch) {
             case 0:
@@ -34,8 +37,10 @@ public class Brain extends Organ{
         return "WTF?";
     }
 
-    public void getResult(String str)
+    /**Method getResult
+     * @return String with a result of rule method*/
+    public String getResult(int ch, int flag)
     {
-        System.out.println(str);
+        return rule(ch,flag);
     }
 }
