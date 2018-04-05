@@ -1,4 +1,4 @@
-package sample;
+package HeadOrgans;
 
 import java.util.ArrayList;
 /**
@@ -6,9 +6,9 @@ import java.util.ArrayList;
  * a container to other organs
  * */
 public class Head {
-    private Organ organ;
+    private HeadOrgan organ;
 
-    public  ArrayList<Organ> organs;
+    public  ArrayList<HeadOrgan> organs;
 
     public  Head()
     {

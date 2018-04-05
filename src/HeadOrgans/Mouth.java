@@ -1,9 +1,12 @@
-package sample;
+package HeadOrgans;
+
+import BodyOrgan.Stomach;
+
 /**
  * class Mouth contains pole size
  * and two methods: Eat, which can return different tastes,
  * and method speak, which returns different strings */
-public class Mouth extends Organ{
+public class Mouth extends HeadOrgan {
 
     private String size;
 
@@ -54,5 +57,11 @@ public class Mouth extends Organ{
 
             default: return "WTF?";
         }
+    }
+
+    public String GiveFood(String food)
+    {
+        Stomach jel = new Stomach(250, 500);
+        return food + " " + jel.TakeFood(food);
     }
 }

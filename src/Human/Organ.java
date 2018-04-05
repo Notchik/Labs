@@ -1,8 +1,8 @@
-package sample;
+package Human;
 /**
  * Class Organ is a superclass, which describes main characteristics
  * of different organs*/
-public class Organ {
+abstract public class Organ {
     private int mass;
 
     /**Constructor of Organ class*/

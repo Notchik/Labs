@@ -1,9 +1,10 @@
-package sample;
+package HeadOrgans;
+
 /**
  * class Nose contains pole form
  * and two methods: sniff, which can return different smells,
  * and method itch, which returns feeling */
-public class Nose extends Organ{
+public class Nose extends HeadOrgan {
 
     private String form;
 

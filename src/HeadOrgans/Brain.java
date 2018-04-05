@@ -1,8 +1,9 @@
-package sample;
+package HeadOrgans;
+
 /**
  * Brain is a class which use methods of Nose class and Mouth class
  * It was developed to rule the main organism*/
-public class Brain extends Organ{
+public class Brain extends HeadOrgan {
 
     private int KPD;
 
@@ -27,11 +28,16 @@ public class Brain extends Organ{
                 break;
 
             case 1:
-                Mouth rot = new Mouth("ss");
+                Mouth rot = new Mouth("gg");
                 if (flag == 1)
                     return (rot.Eat());
                 if (flag == 2)
                     return (rot.Speak());
+                break;
+            case 2:
+                Ear uho = new Ear(20,false);
+                if (flag == 1)
+                    return (uho.Hear());
                 break;
         }
         return "WTF?";
